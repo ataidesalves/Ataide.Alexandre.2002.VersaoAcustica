@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Ataíde & Alexandre 2002 Versão acustica</title>
+</head>
+<body>
+    <div class="music-player">
+        <h1>Ataíde & Alexandre 2002 Versão acustica</h1>
+        <select id="songList" onchange="changeSong()">
+            <option value="01 Apaixonado Por Você.mp3">01 Apaixonado Por Você</option>
+            <option value="02 Agenda Rabiscada.mp3">02 Agenda Rabiscada</option>
+            <option value="03 Liguei Pra Dizer Que Te Amo.mp3">03 Liguei Pra Dizer Que Te Amo</option>
+            <option value="04 Baby.mp3">04 Baby</option>
+            <option value="05 Coração Vai Lá.mp3">05 Coração Vai Lá</option>
+            <option value="06 Hoje Eu Sei.mp3">06 Hoje Eu Sei</option>
+            <option value="07 Apenas Um Sorriso.mp3">07 Apenas Um Sorriso</option>
+            <option value="08 Ô De Casa, Ô De Fora.mp3">08 Ô De Casa, Ô De Fora</option>
+            <option value="09 Laço Aberto.mp3">09 Laço Aberto</option>
+            <option value="10 Pagina De Amigos.mp3">10 Pagina De Amigos</option>
+            <option value="11 Larga Dele.mp3">11 Larga Dele</option>
+            <option value="12 Deus Me Livre.mp3">12 Deus Me Livre</option>
+            <option value="13 Amor Carrapicho.mp3">13 Amor Carrapicho</option>
+            <option value="14 Outra Mulher.mp3">14 Outra Mulher</option>
+
+            </select>
+    <audio id="musicPlayer" controls>
+        <source id="audioSource" src="" type="audio/mp3">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+
+    <div class="player-controls">
+        <button id="playPauseBtn" onclick="playPause()">Play/Pause</button>
+        <input type="range" id="volumeControl" onchange="setVolume()" />
+        <span id="currentTime">0:00</span>
+        <progress id="progressBar" value="0" max="100"></progress>
+        <span id="duration">0:00</span>
+        </div>
+        
+    </div>
+
+    <ul>
+        <a href="./vol 11.jpg" download="Ataide & Alexandre.jpg"><button>Imagem Ataide e Alexandre</button></a>
+    </ul>
+    <script src="script.js"></script>
+</body>
+</html>
